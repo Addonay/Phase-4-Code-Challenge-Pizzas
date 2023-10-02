@@ -25,4 +25,8 @@ Navigate to the client side so as to start the react application
 ```bash
 cd ../client
 ```
+start the react application by running the following command
+```bash
+npm start
+```
 your app will run on ``localhost:3000``
