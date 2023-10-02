@@ -1,0 +1,8 @@
+flask
+flask-migrate
+flask-sqlalchemy
+sqlalchemy
+flask-cors
+werkzeug
+flask-restful
+sqlalchemy-serializer

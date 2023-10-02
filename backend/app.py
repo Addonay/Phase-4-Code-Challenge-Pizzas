@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request, make_response
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
 from werkzeug.exceptions import NotFound
+from flask_cors import CORS
 
 from models import db, Restaurant,Pizza,RestaurantPizza
 
@@ -12,7 +13,7 @@ app.json.compact = False
 
 migrate = Migrate(app, db)
 db.init_app(app)
-
+CORS(app)
 api = Api(app)
 # create a response for landing page
 

@@ -1,6 +1,6 @@
 from random import randint, choice as rc,sample
 from faker import Faker
-from backend.app import app
+from app import app
 from models import db, Pizza, RestaurantPizza, Restaurant
 import random
 fake = Faker()
@@ -16,9 +16,47 @@ pizza_names = [
     "Mushroom and Olive Pizza",
     "Buffalo Chicken Pizza",
     "Four Cheese Pizza",
-    "Pesto and Tomato Pizza",
-   
-]
+    "Pesto and Tomato Pizza","Supreme Deluxe Pizza",
+    "BBQ Bacon Ranch Pizza",
+    "Spinach and Feta Pizza",
+    "White Pizza",
+    "Mediterranean Pizza",
+    "Buffalo Ranch Chicken Pizza",
+    "Taco Pizza",
+    "Shrimp Scampi Pizza",
+    "Philly Cheesesteak Pizza",
+    "Caprese Pizza",
+    "Alfredo Chicken Pizza",
+    "Pesto and Artichoke Pizza",
+    "Sausage and Mushroom Pizza",
+    "Peking Duck Pizza",
+    "Bacon and Egg Breakfast Pizza",
+    "Reuben Pizza",
+    "Greek Gyro Pizza",
+    "Tandoori Chicken Pizza",
+    "Kimchi and Pork Belly Pizza",
+    "Clam and Garlic Pizza",
+    "Cajun Shrimp Pizza",
+    "Thai Peanut Chicken Pizza",
+    "Smoked Salmon Pizza",
+    "Eggplant Parmesan Pizza",
+    "Breakfast Burrito Pizza",
+    "Chicken Tikka Masala Pizza",
+    "Prosciutto and Arugula Pizza",
+    "Roast Beef and Horseradish Pizza",
+    "Fig and Prosciutto Pizza",
+    "Buffalo Cauliflower Pizza",
+    "Ratatouille Pizza",
+    "Pear and Gorgonzola Pizza",
+    "Teriyaki Beef Pizza",
+    "Falafel Pizza",
+    "Mexican Street Corn Pizza",
+    "Chili Dog Pizza",
+    "Paella Pizza",
+    "Crab Rangoon Pizza",
+    "Pulled Pork BBQ Pizza",
+    "Lobster and Garlic Butter Pizza"
+  ]
 # list of pizza ingredients
 pizza_ingredients = [
     "Dough",
@@ -31,6 +69,47 @@ pizza_ingredients = [
     "Olives",
     "Basil",
     "Oregano",
+    "Spinach",
+    "Feta cheese",
+    "Ranch dressing",
+    "Alfredo sauce",
+    "Artichoke hearts",
+    "Italian sausage",
+    "Peking duck",
+    "Eggs",
+    "Swiss cheese",
+    "Tandoori sauce",
+    "Kimchi",
+    "Pork belly",
+    "Clams",
+    "Cajun spices",
+    "Peanut sauce",
+    "Smoked salmon",
+    "Eggplant",
+    "Breakfast burrito ingredients",
+    "Tandoori chicken",
+    "Prosciutto",
+    "Arugula",
+    "Roast beef",
+    "Horseradish sauce",
+    "Figs",
+    "Buffalo cauliflower",
+    "Ratatouille vegetables",
+    "Gorgonzola cheese",
+    "Teriyaki sauce",
+    "Falafel balls",
+    "Mexican street corn toppings",
+    "Chili",
+    "Hot dogs",
+    "Paella ingredients",
+    "Cream cheese",
+    "Crab meat",
+    "Rangoon sauce",
+    "Pulled pork",
+    "BBQ sauce",
+    "Lobster",
+    "Garlic butter"
+  
 ]
 
 # delete any existing data
